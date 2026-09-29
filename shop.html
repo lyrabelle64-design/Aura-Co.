@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura & Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+        window.location.href = "login.html";
+    }
+    </script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <!-- Logo -->
+        <nav class="d-flex align-items-center justify-content-between flex-wrap">
+            <a href="index.html">
+                <img src="images/Logo.png" alt="Aura & Co. Logo">
+            </a>
+            <!-- Navigation Links -->
+            <ul class="d-flex flex-wrap">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Cart -->
+            <a href="cart.html">Cart 🛒</a>
+        </nav>
+    </header>
+    <!-- HERO SECTION -->
+     <section class="hero">
+        <div class="hero-content">
+            <a href="shop.html">Shop Now</a>
+        </div>
+    </section>
+    <!-- SHOP PAGE -->
+    <section class="shop-page">
+        <div class="container">
+            <h1>Our Collection</h1>
+            <p>Explore our beautiful collection of fragrances and lifestyle essentials.</p>
+        </div>
+    </section>
+    <!-- PERFUMES -->
+    <section id="perfumes" class="shop-category">
+        <h2>Perfumes</h2>
+        <p>Discover elegant and long-lasting fragrances for every occasion.</p>
+        <div class="products-container row g-4">
+            <!-- Perfume Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">                    
+                    <img src="images/perfume1.png" alt="Aura & Co. Perfume">
+                    <h3>Rose Elegance</h3>
+                    <p>Elegant floral fragrance with a soft and beautiful aroma.</p>
+                    <span>Rs. 3,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Perfume Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/perfume2.png" alt="Aura & Co. Perfume">
+                    <h3>Golden Aura</h3>
+                    <p>A warm and luxurious fragrance for special occasions.</p>
+                    <span>Rs. 4,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Perfume Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/perfume3.png" alt="Aura & Co. Perfume">
+                    <h3>Midnight Bloom</h3>
+                    <p>A sophisticated fragrance with a deep and captivating aroma.</p>
+                    <span>Rs. 4,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Perfume Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/perfume4.png" alt="Aura & Co. Perfume">
+                    <h3>Velvet Rose</h3>
+                    <p>A delicate rose fragrance with a warm and elegant touch.</p>
+                    <span>Rs. 3,800</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Perfume Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/perfume5.png" alt="Aura & Co. Perfume">
+                    <h3>Golden Musk</h3>
+                    <p>A rich and smooth fragrance with a luxurious character.</p>
+                    <span>Rs. 4,200</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Perfume Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/perfume6.jfif" alt="Aura & Co. Perfume">
+                    <h3>Dreamy Oud</h3>
+                    <p>A deep and sophisticated oud fragrance for every occasion.</p>
+                    <span>Rs. 4,800</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- BODY MISTS -->
+        <section id="body-mists" class="shop-category">
+            <h2>Body Mists</h2>
+            <p>Refresh yourself with our light and refreshing scents.</p>
+            <div class="products-container row g-4">
+                <!-- Body Mist Product 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="product-card">
+                    <img src="images/bodymist1.jfif" alt="Aura & Co. Body Mist">
+                    <h3>Pink Blossom</h3>
+                    <p>A soft and refreshing floral mist for everyday freshness.</p>
+                    <span>Rs. 2,200</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Mist Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodymist2.jfif" alt="Aura & Co. Body Mist">
+                    <h3>Vanilla Dream</h3>
+                    <p>A sweet and comforting vanilla fragrance with a gentle aroma.</p>
+                    <span>Rs. 2,400</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Mist Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodymist3.jfif" alt="Aura & Co. Body Mist">
+                    <h3>Fresh Bloom</h3>
+                    <p>A fresh floral scent that keeps you feeling refreshed.</p>
+                    <span>Rs. 2,300</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Mist Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodymist4.jfif" alt="Aura & Co. Body Mist">
+                    <h3>Lavender Mist</h3>
+                    <p>A calming lavender fragrance with a clean and relaxing feel.</p>
+                    <span>Rs. 2,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Mist Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodymist5.jfif" alt="Aura & Co. Body Mist">
+                    <h3>Rose Velvet</h3>
+                    <p>A beautiful rose-inspired mist with a soft elegant scent.</p>
+                    <span>Rs. 2,600</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Mist Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodymist6.jpg" alt="Aura & Co. Body Mist">
+                    <h3>Sweet Aura</h3>
+                    <p>A delicate sweet fragrance perfect for your daily routine.</p>
+                    <span>Rs. 2,350</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SCENTED CANDLES -->
+    <section id="candles" class="shop-category">
+        <h2>Scented Candles</h2>
+        <p>Create a warm and relaxing atmosphere with our beautiful scented candles.</p>
+        <div class="products-container row g-4">
+            <!-- Candle Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle1.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Vanilla Glow</h3>
+                    <p>A warm vanilla fragrance that creates a cozy atmosphere.</p>
+                    <span>Rs. 1,800</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Candle Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle2.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Rose Bliss</h3>
+                    <p>A soft rose scent for a calm and elegant environment.</p>
+                    <span>Rs. 1,900</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Candle Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle3.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Lavender Calm</h3>
+                    <p>A relaxing lavender fragrance perfect for peaceful evenings.</p>
+                    <span>Rs. 2,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Candle Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle4.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Amber Woods</h3>
+                    <p>A rich and warm fragrance with a sophisticated woody aroma.</p>
+                    <span>Rs. 2,200</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Candle Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle5.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Sweet Peony</h3>
+                    <p>A delicate floral fragrance that adds freshness to any room.</p>
+                    <span>Rs. 2,100</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Candle Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/candle6.jfif" alt="Aura & Co. Scented Candle">
+                    <h3>Midnight Oud</h3>
+                    <p>A deep and luxurious oud fragrance for an elegant ambiance.</p>
+                    <span>Rs. 2,300</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ROOM FRAGRANCES -->
+    <section id="room-fragrance" class="shop-category">
+        <h2>Room Fragrances</h2>
+        <p>Create a fresh and relaxing atmosphere with our beautiful room fragrances.</p>
+        <div class="products-container row g-4">
+            <!-- Room Fragrance Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance1.jfif" alt="Aura & Co. Room Fragrance">
+                    <h3>Fresh Linen</h3>
+                    <p>A clean and refreshing scent that keeps your room feeling fresh.</p>
+                    <span>Rs. 2,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Room Fragrance Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance2.jpg" alt="Aura & Co. Room Fragrance">
+                    <h3>Rose Garden</h3>
+                    <p>A beautiful floral fragrance inspired by a fresh rose garden.</p>
+                    <span>Rs. 2,100</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Room Fragrance Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance3.jfif" alt="Aura & Co. Room Fragrance">
+                    <h3>Vanilla Home</h3>
+                    <p>A warm vanilla aroma that adds a cozy feeling to your space.</p>
+                    <span>Rs. 2,200</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Room Fragrance Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance4.jfif" alt="Aura & Co. Room Fragrance">
+                    <h3>Lavender Breeze</h3>
+                    <p>A soft lavender fragrance for a calm and peaceful atmosphere.</p>
+                    <span>Rs. 2,300</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Room Fragrance Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance5.jfif" alt="Aura & Co. Room Fragrance">
+                    <h3>Citrus Fresh</h3>
+                    <p>A bright citrus scent that brings a fresh touch to your room.</p>
+                    <span>Rs. 2,150</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Room Fragrance Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/roomfragrance6.jfif" alt="Aura & Co. Room Fragrance">
+                    <h3>Amber Mist</h3>
+                    <p>A warm amber fragrance with a sophisticated and elegant aroma.</p>
+                    <span>Rs. 2,400</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- GIFT SETS -->
+    <section id="gift-sets" class="shop-category">
+        <h2>Gift Sets</h2>
+        <p>Discover beautiful fragrance gift sets for every special occasion.</p>
+        <div class="products-container row g-4">
+            <!-- Gift Set Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset1.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Rose Gift Set</h3>
+                    <p>A beautiful rose-inspired fragrance set, perfect for gifting.</p>
+                    <span>Rs. 4,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Gift Set Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset2.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Luxury Aura Set</h3>
+                    <p>An elegant collection of fragrance essentials for someone special.</p>
+                    <span>Rs. 5,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Gift Set Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset3.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Bloom Collection</h3>
+                    <p>A delightful floral fragrance collection beautifully packed for gifting.</p>
+                    <span>Rs. 4,800</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Gift Set Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset4.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Vanilla Dreams Set</h3>
+                    <p>A warm vanilla-inspired collection for a cozy gifting experience.</p>
+                    <span>Rs. 4,700</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Gift Set Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset5.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Golden Elegance</h3>
+                    <p>A luxurious fragrance set presented in elegant Aura & Co. packaging.</p>
+                    <span>Rs. 5,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Gift Set Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/giftset6.jfif" alt="Aura & Co. Gift Set">
+                    <h3>Complete Aura Set</h3>
+                    <p>A complete fragrance collection made for memorable occasions.</p>
+                    <span>Rs. 6,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BODY CARE -->
+    <section id="body-care" class="shop-category">
+        <h2>Body Care</h2>
+        <p>Discover refreshing body care products for your everyday routine.</p>
+        <div class="products-container row g-4">
+            <!-- Body Care Product 1 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodycare1.jfif" alt="Aura & Co. Body Care">
+                    <h3>Rose Body Lotion</h3>
+                    <p>A soft and refreshing body lotion with a beautiful rose aroma.</p>
+                    <span>Rs. 2,000</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Care Product 2 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <button class="favorite-btn">♡</button>
+                    <img src="images/bodycare2.jfif" alt="Aura & Co. Body Care">
+                    <h3>Vanilla Body Cream</h3>
+                    <p>A smooth vanilla-scented cream for a fresh everyday routine.</p>
+                    <span>Rs. 2,200</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Care Product 3 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodycare3.jfif" alt="Aura & Co. Body Care">
+                    <h3>Lavender Body Wash</h3>
+                    <p>A gentle lavender-scented body wash for a refreshing experience.</p>
+                    <span>Rs. 1,900</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Care Product 4 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodycare4.jfif" alt="Aura & Co. Body Care">
+                    <h3>Sweet Rose Scrub</h3>
+                    <p>A refreshing rose-scented body scrub for your self-care routine.</p>
+                    <span>Rs. 2,100</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Care Product 5 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodycare5.jfif" alt="Aura & Co. Body Care">
+                    <h3>Glow Body Mist</h3>
+                    <p>A light and refreshing mist with a soft, elegant fragrance.</p>
+                    <span>Rs. 2,300</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+            <!-- Body Care Product 6 -->
+            <div class="col-12 col-sm-6 col-lg-4">
+                <div class="product-card">
+                    <img src="images/bodycare6.jfif" alt="Aura & Co. Body Care">
+                    <h3>Luxury Care Set</h3>
+                    <p>A beautiful body care collection for your everyday self-care.</p>
+                    <span>Rs. 3,500</span>
+                    <button class="add-cart-btn">Add to Cart</button>
+                    <button class="favorite-btn">♡</button>
+                </div>
+            </div>
+        </div>
+        <!-- CART SUCCESS POPUP -->
+        <div id="cartPopup" class="cart-popup-overlay">
+            <div class="cart-popup">
+                <button class="popup-close" id="popupClose">&times;</button>
+                <div class="popup-check">
+                    ✓
+                </div>
+                <h2>Added to Cart</h2>
+                <div class="popup-decoration">
+                    ─────── ❈ ───────
+                </div>
+                <div class="popup-product">
+                    <img id="popupProductImage" src="" alt="Product">
+                    <div class="popup-product-info">
+                        <h3 id="popupProductName">Product Name</h3>
+                        <p id="popupProductPrice">Rs. 2,300</p>
+                        <span>The item has been added to your cart.</span>
+                    </div>
+                </div>
+            <div class="popup-buttons">
+                <button id="continueShopping">CONTINUE SHOPPING</button>
+                <button id="viewCart">VIEW CART</button>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container row g-4">
+                <!-- Brand Information -->
+                <div class="footer-box col-12 col-md-6 col-lg-3">
+                    <h2>Aura & Co.</h2>
+                    <p>Discover elegant fragrances and lifestyle essentials designed to make every moment memorable.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="footer-box col-12 col-md-6 col-lg-3">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+               <!-- Customer Service -->
+                <div class="footer-box col-12 col-md-6 col-lg-3">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="about.html#shipping">Shipping & Delivery</a></li>
+                        <li><a href="about.html#return">Returns & Refunds</a></li>
+                        <li><a href="about.html#privacy">Privacy Policy</a></li>
+                        <li><a href="about.html#terms">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Information -->
+                <div class="footer-box col-12 col-md-6 col-lg-3">
+                    <h3>Contact Us</h3>
+                    <p>Email: auraandco@gmail.com</p>
+                    <p>Phone: +92 300 1234567</p>
+                    <p>Karachi, Pakistan</p>
+                </div>
+            </div>
+            <!-- Social Media -->
+            <div class="social-links">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">TikTok</a>
+            </div>
+            <!-- Footer Ending -->
+            <div class="footer-bottom">
+                <p>2026 Aura & Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

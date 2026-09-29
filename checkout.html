@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura & Co.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script>
+        if (localStorage.getItem("loggedIn") !== "true") {
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <!-- CHECKOUT -->
+    <section class="checkout-section">
+        <h1>Checkout</h1>
+        <!-- CUSTOMER INFORMATION -->
+        <div class="checkout-form">
+            <h2>Customer Information</h2>
+            <label for="customerName">Full Name</label>
+            <input type="text" id="customerName" placeholder="Enter your full name">
+            <label for="customerPhone">Phone Number</label>
+            <input type="text" id="customerPhone" placeholder="Enter your phone number">
+            <label for="customerEmail">Email Address</label>
+            <input type="email" id="customerEmail" placeholder="Enter your email address">
+            <label for="customerAddress">Address</label>
+            <textarea id="customerAddress" placeholder="Enter your complete address"></textarea>
+            <label for="customerCity">City</label>
+            <input type="text" id="customerCity" placeholder="Enter your city">
+        </div>
+        <!-- ORDER SUMMARY -->
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div id="checkoutItems"><!-- CART ITEMS WILL SHOW HERE --></div>
+            <p class="checkout-total">
+            Total: <span id="checkoutTotal">Rs. 0</span>
+            </p>
+        </div>
+        <!-- PAYMENT METHOD -->
+        <div class="payment-method">
+            <h2>Payment Method</h2>
+            <label><input type="radio" name="payment" value="Cash on Delivery" checked>Cash on Delivery</label>
+            <label><input type="radio" name="payment" value="Online Payment">Online Payment</label>
+        </div>
+        <!-- BILL SUMMARY -->
+        <div class="bill-summary">
+            <h2>Bill Summary</h2>
+            <p>Subtotal:
+            <span id="checkoutSubtotal">Rs. 0</span>
+            </p>
+            <p>Delivery Charges:<span id="deliveryCharges">Rs. 250</span></p>
+            <hr>
+            <p class="final-total">Total Bill:
+            <span id="finalTotal">Rs. 0</span>
+            </p>
+        </div>
+        <!-- PLACE ORDER -->
+        <div class="place-order">
+            <button id="placeOrderBtn">Place Order</button>
+        </div>
+    </section>
+        <script src="script.js"></script>
+        <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
